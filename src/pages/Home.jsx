@@ -2,9 +2,22 @@ import React from "react";
 import bannerB from "../assets/BannerBig.png";
 import BG from "../assets/BG.png";
 import BGB from "../assets/BG (1).png";
+import P1 from "../assets/p1.png"
+import P2 from "../assets/p2.png"
+import P3 from "../assets/p3.png"
+import P4 from "../assets/p4.png"
+import P5 from "../assets/p5.png"
+import P6 from "../assets/p6.png"
+import P7 from "../assets/p7.png"
+import P8 from "../assets/p8.png"
+import P9 from "../assets/p9.png"
+import P10 from "../assets/p10.png"
+import P11 from "../assets/p11.png"
+import P12 from "../assets/p12.png"
 import { ArrowRight, Truck, Headset, Handbag, Box } from "lucide-react";
 import ButtonPrimary from "../components/ButtonPrimary";
 import Support from "../components/Support";
+import Popular from "../components/Popular"
 
 const Home = () => {
   return (
@@ -89,7 +102,7 @@ const Home = () => {
       </div>
 
       {/* Bottom Part */}
-      <div className="flex container gap-3 mx-auto items-center justify-around py-10 px-10 rounded-2xl shadow-2xl">
+      <div className="flex container gap-3 mx-auto items-center justify-around py-10 px-10 rounded-2xl shadow-xl">
         <Support
           icon={<Truck className="text-green-600 h-10 w-10" />}
           text1="Free Shipping"
@@ -110,6 +123,73 @@ const Home = () => {
           text1="Money-Back Guarantee"
           text2="30 Days Money-Back Guarantee"
         />
+      </div>
+
+      {/* Popular Categories */}
+      <div className="mt-15 mb-15">
+        <div className="flex px-0 py-0 items-center justify-between  container mx-auto">
+          <h2 className="text-2xl text-black font-bold font-poppins">
+            Popular Categories
+          </h2>
+          <text className="text-green-600 font-poppins flex gap-1 hover:cursor-pointer">
+            View All
+            <span>
+              <ArrowRight />
+            </span>
+          </text>
+        </div>
+
+         {/* Products */}
+         <div className="grid grid-cols-6 gap-6 container mx-auto pt-8 pb-13 ">
+          <Popular
+          img ={<img src ={P1} />}
+          text="Fresh Fruit"
+          />
+          <Popular
+          img ={<img src ={P2} />}
+          text="Fresh Vegetables"
+          />
+          <Popular
+          img ={<img src ={P3} />}
+          text="Meat & Fish"
+          />
+          <Popular
+          img ={<img src ={P4} />}
+          text="Snacks"
+          />
+          <Popular
+          img ={<img src ={P5} />}
+          text="Beverages"
+          />
+          <Popular
+          img ={<img src ={P6} />}
+          text="Beauty & Health"
+          />
+          <Popular
+          img ={<img src ={P7} />}
+          text="Bread & Bakery"
+          />
+          <Popular
+          img ={<img src ={P8} />}
+          text="Baking Needs"
+          />
+          <Popular
+          img ={<img src ={P9} />}
+          text="Cooking"
+          />
+          <Popular
+          img ={<img src ={P10} />}
+          text="Diabetic Food"
+          />
+          <Popular
+          img ={<img src ={P11} />}
+          text="Dish Detergents"
+          />
+          <Popular
+          img ={<img src ={P12} />}
+          text="Oil"
+          />
+         </div>
       </div>
     </section>
   );
