@@ -22,11 +22,11 @@ const Navbar = () => {
             <div className="border-1 border-r-0 border-gray-400 rounded-l-lg pt-6 pb-6 mt-6 mb-6 h-12 w-125 flex">
               <div className="flex items-center">
                 <Search className="text-black ml-4" />
-                <text className="text-gray-500 ml-2">Search</text>
+                <text className="text-gray-500 ml-2 ">Search</text>
               </div>
             </div>
             <div>
-              <button className="text-white bg-green-500 rounded-r-lg h-13 w-25">
+              <button className="text-white bg-green-500 rounded-r-lg h-13 w-25 hover:cursor-pointer">
                 Search
               </button>
             </div>
@@ -47,9 +47,9 @@ const Navbar = () => {
       </div>
 
       {/* Nav Items */}
-      <div className="flex items-center justify-between container mx-auto">
+      <div className="flex items-center justify-between container mx-auto pt-5 pb-5">
         <div>
-          <ul className="flex items-center justify-center gap-10 pt-10 text-white pb-5">
+          <ul className="flex items-center justify-center gap-10  text-white ">
             <Link to="/">
               <li className="flex gap-1">
                 Home
@@ -92,7 +92,7 @@ const Navbar = () => {
         </div>
 
         {/* Phone Number */}
-        <div className="flex pt-10 text-white gap-2">
+        <div className="flex  text-white gap-2">
           <PhoneCall />
           <p>(219) 555-0114</p>
         </div>
