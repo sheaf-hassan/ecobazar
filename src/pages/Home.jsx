@@ -24,6 +24,9 @@ import pp7 from "../assets/pp7.png";
 import pp8 from "../assets/pp8.png";
 import pp9 from "../assets/pp9.png";
 import pp10 from "../assets/pp10.png";
+import C1 from "../assets/c1.png";
+import C2 from "../assets/c2.png";
+import C3 from "../assets/c3.png";
 import { ArrowRight, Truck, Headset, Handbag, Box, Star } from "lucide-react";
 import ButtonPrimary from "../components/ButtonPrimary";
 import Support from "../components/Support";
@@ -233,6 +236,91 @@ const Home = () => {
             text1="Green Chili"
             text2="$34.00"
           />
+        </div>
+      </div>
+
+      {/* Card */}
+      <div className="grid grid-cols-3 container  gap-6 mx-auto pb-15">
+        <div className="relative">
+          <img src={C1} alt="" />
+          <div className="absolute top-9 inset-x-0 text-center place-items-center">
+            <p className="text-white font-poppins pb-4">Best Deals</p>
+            <h2 className="text-white font-poppins text-3xl font-bold pb-8">
+              Sale of the Month
+            </h2>
+            <div>
+              <ButtonPrimary
+                text="Shop Now"
+                icon={
+                  <span>
+                    <ArrowRight />
+                  </span>
+                }
+                link="/shop"
+                onClick={() => {
+                  alert("Navigating to shop now!");
+                }}
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="relative">
+          <img src={C2} alt="" />
+          <div className="absolute top-9 inset-x-0 text-center place-items-center">
+            <p className="text-white font-poppins pb-4">85% Fat Free</p>
+            <h2 className="text-white font-poppins text-3xl font-bold pb-8">
+              Low-Fat Meat
+            </h2>
+            <p className="text-white font-poppins pb-8">
+              Best Deals Started at $79.99
+            </p>
+            <div>
+              <ButtonPrimary
+                text="Shop Now"
+                icon={
+                  <span>
+                    <ArrowRight />
+                  </span>
+                }
+                link="/shop"
+                onClick={() => {
+                  alert("Navigating to shop now!");
+                }}
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="relative">
+          <img src={C3} alt="" />
+          <div className="absolute top-9 inset-x-0 text-center place-items-center">
+            <p className="text-black font-poppins pb-4">Summer Sale</p>
+            <h2 className="text-black font-poppins text-3xl font-bold">
+              100% Fresh Fruit
+            </h2>
+
+            <div className="flex items-center justify-center gap-2 pt-2 pb-6">
+              <p className="text-black font-poppins">Up to</p>
+              <p className="text-yellow-400 px-2 py-1 bg-black rounded">
+                64% OFF
+              </p>
+            </div>
+            <div>
+              <ButtonPrimary
+                text="Shop Now"
+                icon={
+                  <span>
+                    <ArrowRight />
+                  </span>
+                }
+                link="/shop"
+                onClick={() => {
+                  alert("Navigating to shop now!");
+                }}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
