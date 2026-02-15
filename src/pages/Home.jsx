@@ -37,59 +37,64 @@ const Home = () => {
   return (
     <section className="bg-white ">
       {/* Hero section */}
-      <div className="container mx-auto py-6">
-        {/* Left part */}
-        <div className="flex gap-6 items-center justify-center relative">
-          <img src={bannerB} alt="" className="w-full  object-cover" />
+      <div className="container mx-auto py-6 px-5">
+        <div className="flex-col xl:flex-row flex gap-6">
+          {/* Left part */}
+          <div className="relative">
+            <img src={bannerB} alt="" className="w-full h-full object-cover" />
 
-          <div className="absolute left-15 top-54">
-            <h2 className="text-5xl font-bold font-playwrite">
-              Fresh & Healthy <br />
-              Organic Food
-            </h2>
+            <div className="absolute left-6 lg:left-15 top-8 lg:top-24">
+              <h2 className="text-lg lg:text-5xl font-bold font-playwrite">
+                Fresh & Healthy <br />
+                Organic Food
+              </h2>
 
-            <div className="mt-7 border-l-2 border-green-500 pl-3">
-              <div className="flex items-center gap-2 ">
-                <p className="text-2xl font-bold">Sale up to</p>
-                <div className="bg-[#FF8A00] rounded h-10 justify-center px-3 py-1">
-                  <p className="text-2xl font-bold ">30% OFF</p>
+              <div className="mt-4 lg:mt-7 border-l-2 border-green-500 pl-3">
+                <div className="flex items-center gap-2 ">
+                  <p className="text-sm lg:text-2xl font-bold">Sale up to</p>
+                  <div className="bg-[#FF8A00] rounded justify-center px-3 py-1">
+                    <p className="text-sm lg:text-2xl font-bold ">30% OFF</p>
+                  </div>
                 </div>
+                <p className="pt-2 mb-7 text-sm lg:text-base font-poppins">
+                  Free shipping on all your order.
+                </p>
               </div>
-              <p className="pt-2 mb-7 font-poppins">
-                Free shipping on all your order.
-              </p>
-            </div>
 
-            <ButtonPrimary
-              text="Shop Now"
-              icon={
-                <span>
-                  <ArrowRight />
-                </span>
-              }
-              link="/shop"
-              onClick={() => {
-                alert("Navigating to shop now!");
-              }}
-            />
+              <ButtonPrimary
+                text="Shop Now"
+                icon={
+                  <span>
+                    <ArrowRight />
+                  </span>
+                }
+                link="/shop"
+                onClick={() => {
+                  alert("Navigating to shop now!");
+                }}
+              />
+            </div>
           </div>
 
           {/* Right part */}
-          <div className="w-1/2 flex-row relative">
+          <div className="flex-col flex gap-6">
             {/* top */}
-            <img src={BG} alt="" className="w-full h-full object-cover mb-6" />
-            <div className="absolute left-8 top-8 text-black">
-              <p>SUMMER SALE</p>
-              <p className="pt-2 text-4xl text-black font-bold font-playwrite">
-                75% OFF
-              </p>
-              <p className="pt-3">Only Fruit & Vegetable</p>
-              <p className="pt-6 flex gap-2 text-green-600 hover: cursor-pointer">
-                Shop Now
-                <span>
-                  <ArrowRight />
-                </span>
-              </p>
+            <div className="relative">
+              <img src={BG} alt="" className="w-full h-full object-cover" />
+
+              <div className="absolute left-8 top-8 text-black">
+                <p className="text-xs sm:text-sm md:text-2xl lg:text-xl">SUMMER SALE</p>
+                <p className="pt-2 text-4xl sm:text-2xl md:text-5xl xl:text-2xl text-black font-bold font-playwrite ">
+                  75% OFF
+                </p>
+                <p className="pt-3 text-xs md:text-xl xl:text-sm text-gray-600">Only Fruit & Vegetable</p>
+                <p className="pt-6 flex gap-2 text-green-600 hover: cursor-pointer text-xs sm:text-sm md:text-lg lg:text-xl">
+                  Shop Now
+                  <span>
+                    <ArrowRight />
+                  </span>
+                </p>
+              </div>
             </div>
 
             {/* Bottom */}
@@ -116,7 +121,7 @@ const Home = () => {
       </div>
 
       {/* Bottom Part */}
-      <div className="flex container gap-3 mx-auto items-center justify-around py-10 px-10 rounded-2xl shadow-xl">
+      <div className=" hidden flex container gap-3 mx-auto items-center justify-around py-10 px-10 rounded-2xl shadow-xl">
         <Support
           icon={<Truck className="text-green-600 h-10 w-10" />}
           text1="Free Shipping"
@@ -140,7 +145,7 @@ const Home = () => {
       </div>
 
       {/* Popular Categories */}
-      <div className="pb-15 pt-15">
+      <div className=" hidden pb-15 pt-15">
         <div className="flex px-0 py-0 items-center justify-between  container mx-auto">
           <h2 className="text-2xl text-black font-bold font-poppins">
             Popular Categories
@@ -171,7 +176,7 @@ const Home = () => {
       </div>
 
       {/* Popular Products */}
-      <div className="pb-15">
+      <div className="pb-15 hidden">
         <div className="flex px-0 pb-8 items-center justify-between  container mx-auto">
           <h2 className="text-2xl text-black font-bold font-poppins">
             Popular Products
@@ -240,7 +245,7 @@ const Home = () => {
       </div>
 
       {/* Card */}
-      <div className="grid grid-cols-3 container  gap-6 mx-auto pb-15">
+      <div className=" hidden grid grid-cols-3 container  gap-6 mx-auto pb-15">
         <div className="relative">
           <img src={C1} alt="" />
           <div className="absolute top-9 inset-x-0 text-center place-items-center">

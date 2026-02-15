@@ -7,7 +7,7 @@ import { Search, Heart, Tally1, Handbag } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="hidden">
       {/* search bar */}
       <div className="bg-white">
         <div className=" flex items-center justify-between mx-auto container">

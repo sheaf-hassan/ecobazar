@@ -7,7 +7,7 @@ const ButtonPrimary = ({ text, icon, link, onClick }) => {
     <Link to={link}>
       <button
         onClick={onClick}
-        className="py-4 px-10 font-medium bg-white text-green-500 rounded-full flex items-center justify-center gap-1 hover:cursor-pointer hover:bg-white/90"
+        className="py-2 md:py-4 px-4 md:px-10 text-sm md:text-base font-medium bg-white text-green-500 rounded-full flex items-center justify-center gap-1 hover:cursor-pointer hover:bg-white/90"
       >
         {text}
 
