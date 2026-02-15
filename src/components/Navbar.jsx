@@ -47,54 +47,56 @@ const Navbar = () => {
       </div>
 
       {/* Nav Items */}
-      <div className="flex items-center justify-between container mx-auto pt-5 pb-5">
-        <div>
-          <ul className="flex items-center justify-center gap-10  text-white ">
-            <Link to="/">
-              <li className="flex gap-1">
-                Home
-                <span>
-                  <ChevronDown />
-                </span>
-              </li>
-            </Link>
-            <Link to="/shop">
-              <li className="flex gap-1">
-                Shop
-                <span>
-                  <ChevronDown />
-                </span>
-              </li>
-            </Link>
-            <Link to="/pages">
-              <li className="flex gap-1">
-                Pages
-                <span>
-                  <ChevronDown />
-                </span>
-              </li>
-            </Link>
-            <Link to="/blog">
-              <li className="flex gap-1">
-                Blog
-                <span>
-                  <ChevronDown />
-                </span>
-              </li>
-            </Link>
-            <Link to="/about">
-              <li>About Us</li>
-            </Link>
-            <Link to="/contact">
-              <li>Contact Us</li>
-            </Link>
-          </ul>
-        </div>
+      <div className="bg-black">
+        <div className="flex items-center justify-between container mx-auto pt-5 pb-5">
+          <div>
+            <ul className="flex items-center justify-center gap-10  text-white ">
+              <Link to="/">
+                <li className="flex gap-1">
+                  Home
+                  <span>
+                    <ChevronDown />
+                  </span>
+                </li>
+              </Link>
+              <Link to="/shop">
+                <li className="flex gap-1">
+                  Shop
+                  <span>
+                    <ChevronDown />
+                  </span>
+                </li>
+              </Link>
+              <Link to="/pages">
+                <li className="flex gap-1">
+                  Pages
+                  <span>
+                    <ChevronDown />
+                  </span>
+                </li>
+              </Link>
+              <Link to="/blog">
+                <li className="flex gap-1">
+                  Blog
+                  <span>
+                    <ChevronDown />
+                  </span>
+                </li>
+              </Link>
+              <Link to="/about">
+                <li>About Us</li>
+              </Link>
+              <Link to="/contact">
+                <li>Contact Us</li>
+              </Link>
+            </ul>
+          </div>
 
-        {/* Phone Number */}
-        <div className="flex  text-white gap-2">
-          <PhoneCall />
-          <p>(219) 555-0114</p>
+          {/* Phone Number */}
+          <div className="flex  text-white gap-2">
+            <PhoneCall />
+            <p>(219) 555-0114</p>
+          </div>
         </div>
       </div>
     </div>
